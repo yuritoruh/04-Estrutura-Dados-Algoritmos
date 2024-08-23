@@ -9,6 +9,5 @@ public class Principal{
         lista.addFinal("Safira");
         lista.imprimeDado();
 
-
     }
 }
