@@ -46,15 +46,16 @@ public class Lista<T>{
         if(primeiroNo == null){
             System.out.println("Lista Vazia");
         }else{
-            System.out.println("Dado: " + ultimoNo.getDado() + " removido da lista.");
+            System.out.println("Dado: {%s} removido da lista.", ultimoNo.getDado());
             
-            No<T> aux = primeiroNo;
+            No<T> noAux = primeiroNO;
 
-            while(aux.getNextNo() != ultimoNo){
-                aux = aux.getNextNo();
+            wilhe(noAux.getAux() != ultimoNO){
+                noAux = noAux.getAux();
             }
-            ultimoNo = aux;
-            aux.setNextNo(null);
+            
+            ultimoNo = NoAux;
+            noAux.setNextNo(null);
         }
     }
 
@@ -68,7 +69,7 @@ public class Lista<T>{
 
             while(aux != null){
                 System.out.printf("- %s\n", aux.getDado());
-                aux = aux.getNextNode();
+                aux = aux.getNextNo();
             }
         }
     }

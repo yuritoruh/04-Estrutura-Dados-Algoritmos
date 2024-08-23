@@ -8,6 +8,8 @@ public class Principal{
         lista.imprimeDado();
         lista.addFinal("Safira");
         lista.imprimeDado();
+        lista.removeFInal();
+        lista.impremeDado();
 
     }
 }
