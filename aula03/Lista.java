@@ -37,8 +37,8 @@ public class Lista<T>{
         if(primeiroNo == null){
             System.out.println("Lista Vazia");
         }else{
-            System.out.println("Dado: " + primeiroNo.getDado() + " removido da lista.");
-            primeiroNo = primeiroNo.getNextNode();
+            System.out.println("Dado: {%s} removido da lista.", primeiroNo.getDado());
+            primeiroNo = primeiroNo.getAux();
         }
     }
 
@@ -50,8 +50,8 @@ public class Lista<T>{
             
             No<T> aux = primeiroNo;
 
-            while(aux.getNextNode() != ultimoNo){
-                aux = aux.getNextNode();
+            while(aux.getNextNo() != ultimoNo){
+                aux = aux.getNextNo();
             }
             ultimoNo = aux;
             aux.setNextNo(null);
