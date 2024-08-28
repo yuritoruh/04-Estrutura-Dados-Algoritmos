@@ -50,7 +50,7 @@ public class Lista<T>{
             
             No<T> noAux = primeiroNO;
 
-            wilhe(noAux.getAux() != ultimoNO){
+            while(noAux.getAux() != ultimoNo){
                 noAux = noAux.getAux();
             }
             
