@@ -23,7 +23,19 @@ public class Fila<T>{
         }
     }
 
+    public T desenfileirar(){
+        if(primeiroNo == null){
+            System.err.println("Fila Vazia!");
+            return null;
+        }
 
+        T dado = primeiroNo.getDado();
+        primeiroNo = primeiroNo.getNextNo();
 
-
+        if(primeiroNo ==null){
+            ultimoNo = null;
+        }
+        
+        return dado;
+    }
 }
